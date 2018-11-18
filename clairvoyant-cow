@@ -1,0 +1,12 @@
+#!/bin/bash
+# The cow can tell your future.
+
+let num=($RANDOM % 3)
+
+if [ $num -eq 0 ]; then
+    fortune | cowsay
+elif [ $num -eq 1 ]; then
+    fortune | cowsay -f tux
+elif [ $num -eq 2 ]; then
+    fortune | cowsay -f head-in
+fi
